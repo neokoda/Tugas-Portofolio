@@ -33,10 +33,6 @@ h2 {
 }
 
 h3 {
-  font-size: 32px;
-}
-
-h4 {
   font-size: 28px;
 }
 
@@ -102,22 +98,22 @@ nav ul li {
 
 #neo-image {
   height: 250px;
-  width: auto;
+  width: 250px;
 }
 
-@keyframes slideIn {
+@keyframes fadeInUp {
   from {
-    transform: translateX(-100%);
+    transform: translateY(30px);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
 h1 {
-  animation: slideIn 1s ease-out;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 #tech-stack {
@@ -227,6 +223,7 @@ footer ul li {
 
 .footer-icon {
   height: 25px;
+  width: 25px;
   margin: 0px 8px;
 }
 
