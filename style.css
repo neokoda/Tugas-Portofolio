@@ -13,6 +13,11 @@ body, article, section {
   font-family: 'Poppins', 'Arial';
   color: white;
   text-align: center;
+  width: 100%;
+}
+
+main {
+  width: 100%;
 }
 
 section {
@@ -227,12 +232,61 @@ footer ul li {
   margin: 0px 8px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   header nav ul {
     display: none;
   }
 
   section {
-    max-width: 95%;
+    max-width: 90%;
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  #projects {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .project-card {
+    width: 300px;
+    height: 540px;
+    margin: 12px 0;
+  }
+
+  .project-img {
+    width: 300px;
+    height: 180px;
+  }
+
+  #tech-stack img {
+    height: 50px;
+    width: 50px;
+  }
+
+  footer {
+    padding: 16px;
+  }
+
+  footer ul li {
+    font-size: 14px;
   }
 }
+
